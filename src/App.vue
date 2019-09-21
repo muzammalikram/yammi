@@ -1,11 +1,19 @@
+
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div id="app">
+  <div class="wrapper">
+    <!--side bar start -->
+    <SideBar />
+    <!--side bar end-->
+    <div class="main-panel">
+      <NavBar />
+      <div class="content">
+            <router-view></router-view>
+      </div>
     </div>
-    <router-view/>
   </div>
+<!--  <router-view/>-->
+</div>
 </template>
 
 <style lang="scss">
@@ -27,3 +35,13 @@
   }
 }
 </style>
+
+<script>
+  import SideBar from '@/components/SideBar.vue'
+  import NavBar from '@/components/NavBar.vue'
+  export default {
+    components: {
+      SideBar, NavBar
+    }
+  }
+</script>

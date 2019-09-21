@@ -203,19 +203,11 @@
                   <td>25</td>
                   <td><i class="fa fa-euro"></i>150,50</td>
                 </tr>
-
-
                 </tbody>
               </table>
-
-
             </div>
           </div>
-
-
         </div>
-
-
       </div>
     </div>
   </div>
